@@ -1,6 +1,6 @@
 # Shaman
 
-A Ruby client for interacting with the [shaman](https://github.com/nanopack/shaman) service.
+A Ruby client for interacting with the [shaman](https://github.com/mu-box/shaman) service.
 
 ## Installation
 
@@ -38,13 +38,13 @@ client.records
 
 Fetch information about a particular record:
 ```ruby
-client.record('nanobox.io')
+client.record('microbox.cloud')
 ```
 
 Add a new domain record:
 ```ruby
 client.add_record({
-    domain: 'nanobox.io',     # Domain name to resolve
+    domain: 'microbox.cloud', # Domain name to resolve
     records: [
       ttl: 60,                # Seconds a client should cache for
       class: 'IN',            # Record class
@@ -56,8 +56,8 @@ client.add_record({
 
 Update a registered domain record:
 ```ruby
-client.update_record('nanobox.io', {
-  domain: 'nanobox.io',     # Domain name to resolve
+client.update_record('microbox.cloud', {
+  domain: 'microbox.cloud', # Domain name to resolve
   records: [
     ttl: 60,                # Seconds a client should cache for
     class: 'IN',            # Record class
@@ -69,14 +69,14 @@ client.update_record('nanobox.io', {
 
 Remove a registered domain:
 ```ruby
-client.remove_record('nanobox.io')
+client.remove_record('microbox.cloud')
 ```
 
 Reset all records:
 ```ruby
 client.reset_records([
   {
-    domain: 'nanobox.io',     # Domain name to resolve
+    domain: 'microbox.cloud', # Domain name to resolve
     records: [
       ttl: 60,                # Seconds a client should cache for
       class: 'IN',            # Record class
@@ -85,7 +85,7 @@ client.reset_records([
     ]
   },
   {
-    domain: 'gonano.io',     # Domain name to resolve
+    domain: 'microbox.rocks', # Domain name to resolve
     records: [
       ttl: 60,                # Seconds a client should cache for
       class: 'IN',            # Record class
@@ -104,9 +104,9 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/nanopack/shaman.
+Bug reports and pull requests are welcome on GitHub at https://github.com/mu-box/shaman.
 
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+This project is released under [The MIT License](http://opensource.org/licenses/MIT).

@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["tyler@nanobox.io"]
 
   spec.summary       = %q{Ruby client for interacting with the shaman service}
-  spec.homepage      = "https://github.com/nanopack/shaman-client-ruby"
+  spec.homepage      = "https://github.com/mu-box/shaman-client-ruby"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
